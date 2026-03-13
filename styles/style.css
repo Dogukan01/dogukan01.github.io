@@ -115,3 +115,57 @@ footer p {
     font-size: 12px;
     color: #888;
 }
+
+/* İletişim Formu Tasarımı (Box Model) */
+.contact-container {
+    width: 600px;           /* Belgeye göre yaklaşık genişlik */
+    margin: 50px auto;      /* Sayfayı ortalar ve üstten boşluk bırakır */
+    padding: 30px;          /* İç boşluk */
+    border: 2px solid #ccc; /* Belirgin kenarlık */
+    border-radius: 10px;    /* Köşe yuvarlaması */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Form başlığı için */
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Etiketler (Label) */
+.contact-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Giriş alanları (Input, Select, Textarea) */
+.contact-container input, 
+.contact-container select, 
+.contact-container textarea {
+    width: 100%;            /* Genişliği tam kaplar */
+    padding: 10px;          /* Yazı yazarken ferah durması için */
+    margin-bottom: 15px;    /* Elemanlar arası boşluk */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Padding'in genişliği etkilememesi için önemli */
+}
+
+/* Gönder Butonu */
+.contact-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2c3e50; /* Örnek koyu renk */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Buton üzerine gelindiğinde (Hover) */
+.contact-container button:hover {
+    background-color: #34495e;
+}

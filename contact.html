@@ -37,5 +37,28 @@
     <hr>
     <p>© 2026 Doğukan | Web Programlama Dersi</p>
 
+    <div class="contact-container">
+    <h2>İletişim</h2>
+    <form action="#">
+        <label for="ad-soyad">Ad Soyad</label>
+        <input type="text" id="ad-soyad" name="ad-soyad" placeholder="Adınızı ve soyadınızı giriniz..." required>
+
+        <label for="email">E-posta</label>
+        <input type="email" id="email" name="email" placeholder="E-posta adresinizi giriniz..." required>
+
+        <label for="konu">Konu</label>
+        <select id="konu" name="konu">
+            <option value="is-teklifi">İş Teklifi</option>
+            <option value="soru">Soru</option>
+            <option value="geri-bildirim">Geri Bildirim</option>
+        </select>
+
+        <label for="mesaj">Mesaj</label>
+        <textarea id="mesaj" name="mesaj" rows="5" placeholder="Mesajınızı buraya yazınız..." required></textarea>
+
+        <button type="submit">Gönder</button>
+    </form>
+</div>
+
 </body>
 </html>
