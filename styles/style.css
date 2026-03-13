@@ -177,12 +177,48 @@ footer p {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    display: block;
-    margin: 0 auto;
 }
 
 .contact-container button:hover {
     background-color: #45a049;
+}
+
+/* Buton Grubu - Butonları yan yana getirme */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button-group button {
+    flex: 1;
+    max-width: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+/* Gönder Butonu Stili */
+.button-group button[type="submit"] {
+    background-color: #4caf50;
+}
+
+.button-group button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Temizle Butonu Stili */
+.button-group button[type="reset"] {
+    background-color: #f44336;
+}
+
+.button-group button[type="reset"]:hover {
+    background-color: #da190b;
 }
 
 /* Form elemanları ve etiketler için kesin boşluk düzenlemeleri */
