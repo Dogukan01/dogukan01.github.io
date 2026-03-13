@@ -54,11 +54,43 @@
             <option value="geri-bildirim">Geri Bildirim</option>
         </select>
 
-        <label for="mesaj">Mesaj</label>
-        <textarea id="mesaj" name="mesaj" rows="5" placeholder="Mesajınızı buraya yazınız..." required></textarea>
+        <fieldset>
+            <legend>İletişim Tercihi:</legend>
+            <div class="radio-group">
+                <label class="radio-label">
+                    <input type="radio" name="iletisim-tercihi" value="email" checked>
+                    Bana e-posta ile ulaşın
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="iletisim-tercihi" value="telefon">
+                    Bana telefonla ulaşın
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>İlgi Alanları / Yetenekler:</legend>
+            <div class="checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="yetenekler" value="html">
+                    HTML
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="yetenekler" value="css">
+                    CSS
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="yetenekler" value="algoritma">
+                    Algoritma
+                </label>
+            </div>
+        </fieldset>
 
         <label for="dosya">Dosya Yükle</label>
         <input type="file" id="dosya" name="dosya" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.txt">
+
+        <label for="mesaj">Mesaj</label>
+        <textarea id="mesaj" name="mesaj" rows="5" placeholder="Mesajınızı buraya yazınız..." required></textarea>
 
         <div class="button-group">
             <button type="submit">Gönder</button>
