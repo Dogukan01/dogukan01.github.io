@@ -1,171 +1,48 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Ödevi</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Doğukan Yılmaz - Web Sayfası</title>
+    </head>
 
-    <div class="wrapper">
+    <body>
+        <h1> Doğukan Yılmaz </h1>
+        <p>Bilgisayar Mühendisliği Öğrencisi | Web Programlama</p>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="interests.html">İlgi Alanlarım</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+            <li><a href="index2.html">Flex Sayfası</a></li>
 
-        <section class="section-card navbar-section">
-            <div class="section-body navbar-body">
-                <div class="logo">LOGO</div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Ana Sayfa</a></li>
-                    <li><a href="about.html">Hakkında</a></li>
-                    <li><a href="interests.html">Dersler</a></li>
-                    <li><a href="contact.html">İletişim</a></li>
-                </ul>
-            </div>
-            <div class="section-footer tags">
-                <span class="tag">flex layout</span>
-                <span class="tag">justify-content</span>
-                <span class="tag">flex layout</span>
-                <span class="tag">10vh height</span>
-                <span class="tag">100vw height</span>
-                <span class="tag">100vw, width</span>
-            </div>
-        </section>
+        </ul>
 
-        <section class="section-card hero-section">
-            <div class="section-body hero-body">
-                <div class="hero-content">
-                    <h1>Hero Başlık</h1>
-                    <p>Açıklama metni</p>
-                    <div class="lines">
-                        <div class="line"></div>
-                        <div class="line short"></div>
-                    </div>
-                    <button class="btn">Buton</button>
-                </div>
-                <div class="hero-image">
-                    <div class="placeholder-icon">🏞️</div>
-                </div>
-            </div>
-            <div class="section-footer tags">
-                <span class="tag">flex-direction: row: row</span>
-                <span class="tag">height: 30vh</span>
-                <span class="tag">align-items: stretch</span>
-            </div>
-        </section>
+        <h2>Hoş Geldiniz</h2>
+        <p>Bu web sitesi, Web Programlama dersi kapsamında hazırlanmış <b>örnek bir kişisel tanıtım sayfasıdır</b>. Amaç, HTML'in temel etiketlerini ve sayfa yapısını öğrenmektir.</p>
+        <p>Daha fazla bilgi için <i>Hakkımda</i> sayfasını ziyaret edebilirsiniz.</p>
 
-        <section class="section-card cards-section">
-            <div class="section-header">
-                <h2>Kartlar Bölümü</h2>
-                <div class="tags">
-                    <span class="tag">multiple items</span>
-                    <span class="tag">flex layout - wrap</span>
-                </div>
-            </div>
-            <div class="section-body cards-body">
-                <div class="card">
-                    <h3>Kart Başlığı</h3>
-                    <p>Kısa açıklama</p>
-                    <div class="line"></div>
-                    <div class="line short"></div>
-                    <button class="btn">Buton</button>
-                </div>
-                <div class="card">
-                    <h3>Kart Başlığı</h3>
-                    <p>Kısa açıklama</p>
-                    <div class="line"></div>
-                    <div class="line short"></div>
-                    <button class="btn">Buton</button>
-                </div>
-                <div class="card">
-                    <h3>Kart Başlığı</h3>
-                    <p>Kısa açıklama</p>
-                    <div class="line"></div>
-                    <div class="line short"></div>
-                    <button class="btn">Buton</button>
-                </div>
-                <div class="card">
-                    <h3>Kart Başlığı</h3>
-                    <p>Kısa açıklama</p>
-                    <div class="line"></div>
-                    <div class="line short"></div>
-                    <button class="btn">Buton</button>
-                </div>
-            </div>
-            <div class="section-footer tags">
-                <span class="tag">flex-direction</span>
-                <span class="tag">flex layout + wrap</span>
-                <span class="tag">gap + align/hizalama</span>
-                <span class="tag">height: 30vh</span>
-            </div>
-        </section>
+        <h2>Hızlı Bilgiler</h2>
+        <ul>
+            <li>Üniversite: Marmara Üniversitesi</li>
+            <li>Bölüm: Bilgisayar Mühendisliği</li>
+            <li>İlgi Alanı: Veri Yapıları, Linux, C/C++</li>
+        </ul>
 
-        <section class="section-card grow-section">
-            <div class="section-header">
-                <h2>Flex Grow Uygulama</h2>
-                <div class="tags">
-                    <span class="tag">flex-grow:</span>
-                    <span class="tag">height: 20vh</span>
-                    <span class="tag">stretch (esneme)</span>
-                </div>
-            </div>
-            <div class="section-body grow-body">
-                <div class="grow-box box1">
-                    <h4>1 Kutu</h4>
-                    <p>flex-grow: 1;</p>
-                    <button class="btn">Buton</button>
-                </div>
-                <div class="grow-box box2">
-                    <h4>2 Kutu</h4>
-                    <p>flex-grow: 2;</p>
-                    <button class="btn btn-green">Buton</button>
-                </div>
-                <div class="grow-box box3">
-                    <h4>3 Kutu</h4>
-                    <p>flex-grow: 1;</p>
-                    <button class="btn btn-orange">Buton</button>
-                </div>
-            </div>
-            <div class="section-footer tags">
-                <span class="tag">multiple items</span>
-                <span class="tag">flex layout + wrap</span>
-                <span class="tag">gap + align/hizalama</span>
-            </div>
-        </section>
+        <h2>Öğrenme Hedeflerim</h2>
+        <ol>
+            <li>HTML temellerini öğrenmek</li>
+            <li>CSS ile sayfa tasarlamak</li>
+            <li>JavaScript ile etkileşim eklemek</li>
+            <li>ASP.NET Core ile dinamik site geliştirmek</li>
+        </ol>
+        <h2>Faydalı Bağlantılar</h2>
+        <p>Aşağıdaki kaynaklar web geliştirme öğrenirken faydalı olabilir:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/tr/">MDN Web Docs</a></li>
+            <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+            <li><a href="https://github.com/Dogukan01" target="_blank">GitHub Profilim</a></li>
+        </ul>
 
-        <section class="section-card grow-section">
-            <div class="section-header">
-                <h2>Flex Grow Uygulama</h2>
-                <div class="tags">
-                    <span class="tag">flex-grow:</span>
-                    <span class="tag">height: 20vh</span>
-                    <span class="tag">stretch (esneme)</span>
-                </div>
-            </div>
-            <div class="section-body grow-body">
-                <div class="grow-box box1">
-                    <h4>1 Kutu</h4>
-                    <p>flex-grow: 1;</p>
-                </div>
-                <div class="grow-box box2">
-                    <h4>2 Kutu</h4>
-                    <p>flex-grow: 2;</p>
-                </div>
-                <div class="grow-box box3">
-                    <h4>3 Kutu</h4>
-                    <p>flex-grow: 1;</p>
-                </div>
-            </div>
-            <div class="section-footer tags">
-                <span class="tag">flex grow</span>
-                <span class="tag">height: 20vh</span>
-                <span class="tag">stretch (esneme)</span>
-            </div>
-        </section>
-
-        <footer class="section-card footer-section">
-            <p>© 2026 - Temel Flexbox Örneği</p>
-        </footer>
-
-    </div>
-
-</body>
+        <hr>
+        <p>© 2026 Doğukan | Web Programlama Dersi</p>
+    </body>
 </html>
