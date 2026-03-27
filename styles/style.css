@@ -77,6 +77,7 @@ body {
     cursor: pointer;
     margin-top: 15px;
     font-weight: bold;
+    align-self: flex-start;
 }
 .btn-green { background-color: #8ebd87; }
 .btn-orange { background-color: #f2b485; }
@@ -157,6 +158,9 @@ body {
     padding: 15px;
     display: flex;
     flex-direction: column;
+}
+.card .btn {
+    align-self: center;
 }
 
 /* --- 4) Flex Grow --- */
