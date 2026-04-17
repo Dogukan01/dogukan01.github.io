@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Not Hesaplama</title>
+    <link rel="stylesheet" href="styles/birim-hesaplama.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="app-section">
+        <h2>Öğrenci Not Hesaplama</h2>
+        <input type="text" id="adSoyad" placeholder="Ad Soyad">
+        <input type="number" id="vizeNotu" placeholder="Vize Notu">
+        <input type="number" id="finalNotu" placeholder="Final Notu">
+        <button class="btn-gray" onclick="hesaplaNot()">Hesapla</button>
+
+        <div id="sonucNot" class="result-box-gray" style="display: none;">
+            </div>
+    </div>
+
+    <div class="back-button-container">
+        <a href="index.html" class="btn-back">Ana Sayfaya Dön</a>
+    </div>
+
+</div>
+
+<script src="scripts/not-hesaplama.js"></script>
+
+</body>
+</html>

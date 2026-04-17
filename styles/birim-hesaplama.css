@@ -11,7 +11,7 @@ body {
         .app-section {
             background-color: #fff;
             padding: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
@@ -70,4 +70,22 @@ body {
             .app2-grid {
                 grid-template-columns: 1fr;
             }
+        }
+        .back-button-container {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .btn-back {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #abb5be;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-back:hover {
+            background-color: #a9b5be;
         }
