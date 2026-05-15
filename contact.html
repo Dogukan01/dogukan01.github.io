@@ -2,104 +2,116 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İletişim - Doğukan</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/profile.css">
 </head>
 <body>
 
-    <h1>İletişim</h1>
-    <p>Benimle iletişime geçebileceğiniz bilgiler</p>
+    <nav>
+        <a href="index.html" class="logo">Doğukan</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="interests.html">İlgi Alanlarım</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
 
-    <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="about.html">Hakkımda</a></li>
-        <li><a href="interests.html">İlgi Alanlarım</a></li>
-        <li><a href="contact.html">İletişim</a></li>
-        <li><a href="new.html">İkili Menü Sayfası</a></li>
-        <li><a href="index2.html">Flex Sayfası</a></li>
-    </ul>
-
-    <h2>İletişim Bilgilerim</h2>
-    <ul>
-        <li>📧 E-posta: <a href="mailto:yilmazdogukan173@gmail.com">yilmazdogukan173@gmail.com</a></li>
-        <li>📱 Telefon: +90 544 523 61 26</li>
-        <li>💻 GitHub: <a href="https://github.com/Dogukan01" target="_blank">GitHub Profilim</a></li>
-        <li>🔗 LinkedIn: <a href="https://www.linkedin.com/in/dogukan-yilmaz-ceng/" target="_blank">LinkedIn Profilim</a></li>
-    </ul>
-
-    <h2>Sık Sorulan Sorular</h2>
-
-    <h3>Mesajlara ne kadar sürede dönüş yapıyorsunuz?</h3>
-    <p>Genellikle 24 saat içinde e-posta yoluyla dönüş yapıyorum.</p>
-
-    <h3>Projelerde iş birliğine açık mısınız?</h3>
-    <p>Evet, özellikle eğitim ve açık kaynak projelerinde iş birliklerine açığım.</p>
-
-    <p>← <a href="index.html">Ana sayfaya geri dön</a></p>
-
-    <hr>
-    <p>© 2026 Doğukan | Web Programlama Dersi</p>
-
-    <div class="contact-container">
-    <h2>İletişim Formu</h2>
-    <form action="#">
-        <label for="ad-soyad">Ad Soyad</label>
-        <input type="text" id="ad-soyad" name="ad-soyad" placeholder="Adınızı ve soyadınızı giriniz..." required>
-
-        <label for="email">E-posta</label>
-        <input type="email" id="email" name="email" placeholder="E-posta adresinizi giriniz..." required>
-
-        <label for="konu">Konu</label>
-        <select id="konu" name="konu">
-            <option value="is-teklifi">İş Teklifi</option>
-            <option value="soru">Soru</option>
-            <option value="geri-bildirim">Geri Bildirim</option>
-        </select>
-
-        <fieldset>
-            <legend>İletişim Tercihi:</legend>
-            <div class="radio-group">
-                <label class="radio-label">
-                    <input type="radio" name="iletisim-tercihi" value="email" checked>
-                    Bana e-posta ile ulaşın
-                </label>
-                <label class="radio-label">
-                    <input type="radio" name="iletisim-tercihi" value="telefon">
-                    Bana telefonla ulaşın
-                </label>
-            </div>
-        </fieldset>
-
-        <fieldset>
-            <legend>İlgi Alanları / Yetenekler:</legend>
-            <div class="checkbox-group">
-                <label class="checkbox-label">
-                    <input type="checkbox" name="yetenekler" value="html">
-                    HTML
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" name="yetenekler" value="css">
-                    CSS
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" name="yetenekler" value="algoritma">
-                    Algoritma
-                </label>
-            </div>
-        </fieldset>
-
-        <label for="dosya">Dosya Yükle</label>
-        <input type="file" id="dosya" name="dosya" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.txt">
-
-        <label for="mesaj">Mesaj</label>
-        <textarea id="mesaj" name="mesaj" rows="5" placeholder="Mesajınızı buraya yazınız..." required></textarea>
-
-        <div class="button-group">
-            <button type="submit">Gönder</button>
-            <button type="reset">Temizle</button>
+    <main>
+        <div class="glass-card">
+            <h1><i class="fa-regular fa-envelope"></i> İletişim</h1>
+            <p>Benimle iletişime geçebileceğiniz tüm bilgiler ve form aşağıda yer almaktadır.</p>
         </div>
-    </form>
-</div>
 
+        <div class="glass-card" style="display: flex; gap: 2rem; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2><i class="fa-solid fa-address-book"></i> Bilgilerim</h2>
+                <ul class="styled-list">
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:yilmazdogukan173@gmail.com" style="color: #e2e8f0; text-decoration: none;">yilmazdogukan173@gmail.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> +90 544 523 61 26</li>
+                    <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Dogukan01" target="_blank" style="color: #e2e8f0; text-decoration: none;">GitHub Profilim</a></li>
+                    <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/dogukan-yilmaz-ceng/" target="_blank" style="color: #e2e8f0; text-decoration: none;">LinkedIn Profilim</a></li>
+                </ul>
+
+                <h2 style="margin-top: 2rem;"><i class="fa-solid fa-circle-question"></i> Sık Sorulan Sorular</h2>
+                <div style="margin-top: 1rem;">
+                    <h3 style="color: #a78bfa; font-size: 1.1rem;">Mesajlara ne kadar sürede dönüş yapıyorsunuz?</h3>
+                    <p>Genellikle 24 saat içinde e-posta yoluyla dönüş yapıyorum.</p>
+                    
+                    <h3 style="color: #a78bfa; font-size: 1.1rem; margin-top: 1rem;">Projelerde iş birliğine açık mısınız?</h3>
+                    <p>Evet, özellikle eğitim ve açık kaynak projelerinde iş birliklerine açığım.</p>
+                </div>
+            </div>
+
+            <div style="flex: 1; min-width: 300px; background: rgba(0,0,0,0.2); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+                <h2><i class="fa-solid fa-paper-plane"></i> Bana Ulaşın</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="ad-soyad">Ad Soyad</label>
+                        <input type="text" id="ad-soyad" name="ad-soyad" class="form-control" placeholder="Adınızı ve soyadınızı giriniz..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-posta</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="E-posta adresinizi giriniz..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="konu">Konu</label>
+                        <select id="konu" name="konu" class="form-control">
+                            <option value="is-teklifi">İş Teklifi</option>
+                            <option value="soru">Soru</option>
+                            <option value="geri-bildirim">Geri Bildirim</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>İletişim Tercihi:</label>
+                        <div class="radio-checkbox-group">
+                            <label class="radio-checkbox-label">
+                                <input type="radio" name="iletisim-tercihi" value="email" checked> E-posta
+                            </label>
+                            <label class="radio-checkbox-label">
+                                <input type="radio" name="iletisim-tercihi" value="telefon"> Telefon
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>İlgi Alanları / Yetenekler:</label>
+                        <div class="radio-checkbox-group" style="flex-wrap: wrap;">
+                            <label class="radio-checkbox-label">
+                                <input type="checkbox" name="yetenekler" value="html"> HTML
+                            </label>
+                            <label class="radio-checkbox-label">
+                                <input type="checkbox" name="yetenekler" value="css"> CSS
+                            </label>
+                            <label class="radio-checkbox-label">
+                                <input type="checkbox" name="yetenekler" value="algoritma"> Algoritma
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mesaj">Mesaj</label>
+                        <textarea id="mesaj" name="mesaj" rows="4" class="form-control" placeholder="Mesajınızı buraya yazınız..." required></textarea>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Gönder</button>
+                        <button type="reset" class="btn btn-secondary"><i class="fa-solid fa-eraser"></i> Temizle</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Doğukan | Web Programlama Dersi | <a href="index.html">Ana Sayfaya Dön</a></p>
+    </footer>
+
+    <script src="scripts/profile.js"></script>
 </body>
 </html>

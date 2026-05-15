@@ -2,63 +2,98 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İlgi Alanlarım - Doğukan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/profile.css">
 </head>
 <body>
 
-    <h1>İlgi Alanlarım</h1>
-    <p>Teknoloji ve kişisel ilgi alanlarım</p>
+    <nav>
+        <a href="index.html" class="logo">Doğukan</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="interests.html">İlgi Alanlarım</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
 
-    <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="about.html">Hakkımda</a></li>
-        <li><a href="interests.html">İlgi Alanlarım</a></li>
-        <li><a href="contact.html">İletişim</a></li>
-        <li><a href="new.html">İkili Menü Sayfası</a></li>
-        <li><a href="index2.html">Flex Sayfası</a></li>
-    </ul>
+    <main>
+        <div class="glass-card">
+            <h1><i class="fa-solid fa-star"></i> İlgi Alanlarım</h1>
+            <p>Teknoloji, yazılım dünyası ve kişisel hobilerim üzerine.</p>
+        </div>
 
-    <h2>Teknoloji Alanındaki İlgi Alanlarım</h2>
-    <ul>
-        <li>Veri Yapıları ve Algoritmalar (C ve Java)</li>
-        <li>Linux ve Kabuk Betiği (Shell Scripting)</li>
-        <li>Bilgisayar Donanımı ve Performans Optimizasyonu</li>
-        <li>ESP32-CAM ile Nesne Tanıma Projeleri</li>
-        <li>Blender ile Modelleme ve Render</li>
-        <li>Masaüstü Özelleştirme (Rainmeter, Nexus Dock)</li>
-        <li>Öğrenmek istediğim teknolojiler
-            <ul>
-                <li>React</li>
-                <li>ASP.NET Core</li>
-                <li>Flutter</li>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="glass-card" style="margin-bottom: 0;">
+                <h2><i class="fa-solid fa-microchip"></i> Teknoloji</h2>
+                <ul class="styled-list">
+                    <li><i class="fa-solid fa-code"></i> Veri Yapıları ve Algoritmalar (C ve Java)</li>
+                    <li><i class="fa-brands fa-linux"></i> Linux ve Kabuk Betiği (Shell Scripting)</li>
+                    <li><i class="fa-solid fa-server"></i> Bilgisayar Donanımı ve Performans Optimizasyonu</li>
+                    <li><i class="fa-solid fa-robot"></i> ESP32-CAM ile Nesne Tanıma Projeleri</li>
+                    <li><i class="fa-solid fa-cube"></i> Blender ile Modelleme ve Render</li>
+                    <li><i class="fa-solid fa-desktop"></i> Masaüstü Özelleştirme (Rainmeter, vb.)</li>
+                </ul>
+            </div>
+
+            <div class="glass-card" style="margin-bottom: 0;">
+                <h2><i class="fa-solid fa-rocket"></i> Öğrenmek İstediklerim</h2>
+                <ul class="styled-list">
+                    <li><i class="fa-brands fa-react"></i> React ve Modern Frontend</li>
+                    <li><i class="fa-solid fa-network-wired"></i> ASP.NET Core ile Backend</li>
+                    <li><i class="fa-solid fa-mobile-screen"></i> Flutter ile Mobil Geliştirme</li>
+                    <li><i class="fa-solid fa-cloud"></i> Cloud Teknolojileri (AWS/Azure)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="glass-card" style="margin-top: 2rem;">
+            <h2><i class="fa-solid fa-clock"></i> Günlük Çalışma Rutinim</h2>
+            <ul class="styled-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                <li style="border-left: none; background: rgba(59, 130, 246, 0.1); border-top: 4px solid #3b82f6; flex-direction: column; text-align: center; padding: 1.5rem;">
+                    <i class="fa-solid fa-book-open" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <span>Ders materyallerini gözden geçirmek</span>
+                </li>
+                <li style="border-left: none; background: rgba(139, 92, 246, 0.1); border-top: 4px solid #8b5cf6; flex-direction: column; text-align: center; padding: 1.5rem;">
+                    <i class="fa-solid fa-keyboard" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <span>Kodlama pratiği yapmak</span>
+                </li>
+                <li style="border-left: none; background: rgba(236, 72, 153, 0.1); border-top: 4px solid #ec4899; flex-direction: column; text-align: center; padding: 1.5rem;">
+                    <i class="fa-solid fa-magnifying-glass" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <span>Yeni teknolojiler araştırmak</span>
+                </li>
+                <li style="border-left: none; background: rgba(16, 185, 129, 0.1); border-top: 4px solid #10b981; flex-direction: column; text-align: center; padding: 1.5rem;">
+                    <i class="fa-solid fa-laptop-code" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <span>Kişisel projeler geliştirmek</span>
+                </li>
             </ul>
-        </li>
-    </ul>
+        </div>
 
-    <h2>Günlük Çalışma Rutinim</h2>
-    <ol>
-        <li>Ders materyallerini gözden geçirmek</li>
-        <li>Kodlama pratiği yapmak</li>
-        <li>Yeni teknolojiler araştırmak</li>
-        <li>Proje geliştirmek</li>
-    </ol>
+        <div class="glass-card">
+            <h2><i class="fa-solid fa-spell-check"></i> Web Teknolojileri Sözlüğü</h2>
+            <div style="display: grid; gap: 1.5rem; margin-top: 1.5rem;">
+                <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #e34c26;">
+                    <h3 style="color: #e34c26; margin-bottom: 0.5rem;"><i class="fa-brands fa-html5"></i> HTML</h3>
+                    <p style="margin: 0;">Web sayfalarının iskeletini oluşturan işaretleme dilidir. Sayfanın yapısını belirler.</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #264de4;">
+                    <h3 style="color: #264de4; margin-bottom: 0.5rem;"><i class="fa-brands fa-css3-alt"></i> CSS</h3>
+                    <p style="margin: 0;">Web sayfalarının görsel tasarımını düzenlemek için kullanılır. Renkler, fontlar ve yerleşimleri ayarlar.</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #f0db4f;">
+                    <h3 style="color: #f0db4f; margin-bottom: 0.5rem;"><i class="fa-brands fa-js"></i> JavaScript</h3>
+                    <p style="margin: 0;">Web sayfalarına etkileşim kazandıran programlama dilidir. Animasyonlar ve dinamik içerikler için kullanılır.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <h2>Web Teknolojileri Sözlüğü</h2>
-    <dl>
-        <dt>HTML</dt>
-        <dd>Web sayfalarının iskeletini oluşturan işaretleme dilidir.</dd>
-        
-        <dt>CSS</dt>
-        <dd>Web sayfalarının görsel tasarımını düzenlemek için kullanılır.</dd>
-        
-        <dt>JavaScript</dt>
-        <dd>Web sayfalarına etkileşim kazandıran programlama dilidir.</dd>
-    </dl>
+    <footer>
+        <p>© 2026 Doğukan | Web Programlama Dersi | <a href="index.html">Ana Sayfaya Dön</a></p>
+    </footer>
 
-    <p>← <a href="index.html">Ana sayfaya geri dön</a></p>
-
-    <hr>
-    <p>© 2026 Doğukan | Web Programlama Dersi</p>
-
+    <script src="scripts/profile.js"></script>
 </body>
 </html>

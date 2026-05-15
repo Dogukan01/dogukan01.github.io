@@ -2,49 +2,65 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkımda - Doğukan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/profile.css">
 </head>
 <body>
 
-    <h1>Hakkımda</h1>
-    <p>Kendimi ve hedeflerimi tanıttığım sayfa</p>
+    <nav>
+        <a href="index.html" class="logo">Doğukan</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımda</a></li>
+            <li><a href="interests.html">İlgi Alanlarım</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
 
-    <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li><a href="about.html">Hakkımda</a></li>
-        <li><a href="interests.html">İlgi Alanlarım</a></li>
-        <li><a href="contact.html">İletişim</a></li>
-        <li><a href="new.html">İkili Menü Sayfası</a></li>
-        <li><a href="index2.html">Flex Sayfası</a></li>
-    </ul>
+    <main>
+        <div class="glass-card">
+            <h1><i class="fa-solid fa-user-astronaut"></i> Hakkımda</h1>
+            <p>Kendimi ve hedeflerimi tanıttığım sayfaya hoş geldiniz.</p>
+        </div>
 
-    <h2>Ben Kimim?</h2>
-    <p>Merhaba, ben <b>Bilgisayar Mühendisliği 3. sınıf öğrencisiyim</b>. Web teknolojilerine ilgi duyuyor ve kendimi bu alanda geliştirmeyi hedefliyorum.</p>
-    <p>Özellikle <i>frontend geliştirme</i> ve kullanıcı deneyimi konularında çalışmalar yapmayı seviyorum.</p>
+        <div class="glass-card">
+            <h2><i class="fa-solid fa-address-card"></i> Ben Kimim?</h2>
+            <p>Merhaba, ben <b>Bilgisayar Mühendisliği 3. sınıf öğrencisiyim</b>. Web teknolojilerine ilgi duyuyor ve kendimi bu alanda geliştirmeyi hedefliyorum.</p>
+            <p>Özellikle <i>frontend geliştirme</i> ve kullanıcı deneyimi (UX/UI) konularında çalışmalar yapmayı seviyorum. Yenilikçi ve modern tasarımlar üretmek en büyük tutkum.</p>
+        </div>
 
-    <h2>Eğitim Bilgilerim</h2>
-    <ul>
-        <li>İstanbul'daki Üniversiten (Buraya kendi üniversitenin adını yazabilirsin)</li>
-        <li>Bilgisayar Mühendisliği</li>
-        <li>Web Programlama dersi</li>
-    </ul>
+        <div class="glass-card">
+            <h2><i class="fa-solid fa-graduation-cap"></i> Eğitim Bilgilerim</h2>
+            <ul class="styled-list">
+                <li><i class="fa-solid fa-building-columns"></i> Üniversite (Kendi üniversiteniz)</li>
+                <li><i class="fa-solid fa-laptop-code"></i> Bilgisayar Mühendisliği Bölümü</li>
+                <li><i class="fa-solid fa-book-open"></i> Web Programlama Dersi</li>
+            </ul>
+        </div>
 
-    <h2>Motivasyonum</h2>
-    <blockquote>
-        "İyi yazılmış bir web sitesi, hem kullanıcıyı hem geliştiriciyi mutlu eder."
-    </blockquote>
+        <div class="glass-card">
+            <h2><i class="fa-solid fa-lightbulb"></i> Motivasyonum</h2>
+            <blockquote>
+                "İyi yazılmış bir web sitesi, hem kullanıcıyı hem geliştiriciyi mutlu eder."
+            </blockquote>
+        </div>
 
-    <h2>Hedeflerim</h2>
-    <ol>
-        <li>Modern web teknolojilerini öğrenmek</li>
-        <li>Responsive tasarım geliştirmek</li>
-        <li>ASP.NET Core ile dinamik uygulamalar yazmak</li>
-    </ol>
+        <div class="glass-card">
+            <h2><i class="fa-solid fa-bullseye"></i> Hedeflerim</h2>
+            <ul class="styled-list">
+                <li><i class="fa-solid fa-check"></i> Modern web teknolojilerini (React, Vue) derinlemesine öğrenmek</li>
+                <li><i class="fa-solid fa-check"></i> Etkileyici, responsive ve dinamik tasarımlar geliştirmek</li>
+                <li><i class="fa-solid fa-check"></i> ASP.NET Core ile güçlü backend sistemleri kurmak</li>
+            </ul>
+        </div>
+    </main>
 
-    <p>← <a href="index.html">Ana sayfaya geri dön</a></p>
+    <footer>
+        <p>© 2026 Doğukan | Web Programlama Dersi | <a href="index.html">Ana Sayfaya Dön</a></p>
+    </footer>
 
-    <hr>
-    <p>© 2026 Doğukan | Web Programlama Dersi</p>
-
+    <script src="scripts/profile.js"></script>
 </body>
 </html>
