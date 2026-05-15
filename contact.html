@@ -10,7 +10,12 @@
 <body>
 
     <nav>
-        <a href="index.html" class="logo">Doğukan</a>
+        <div style="display: flex; align-items: center; gap: 1.5rem;">
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Temayı Değiştir">
+                <i id="theme-icon" class="fa-solid fa-moon"></i>
+            </button>
+            <a href="index.html" class="logo">Doğukan</a>
+        </div>
         <div class="nav-right">
             <ul class="nav-links">
                 <li><a href="index.html">Ana Sayfa</a></li>
@@ -18,9 +23,6 @@
                 <li><a href="interests.html">İlgi Alanlarım</a></li>
                 <li><a href="contact.html">İletişim</a></li>
             </ul>
-            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Temayı Değiştir">
-                <i id="theme-icon" class="fa-solid fa-moon"></i>
-            </button>
         </div>
     </nav>
 
@@ -34,10 +36,10 @@
             <div style="flex: 1; min-width: 300px;">
                 <h2><i class="fa-solid fa-address-book"></i> Bilgilerim</h2>
                 <ul class="styled-list">
-                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:yilmazdogukan173@gmail.com" style="color: #e2e8f0; text-decoration: none;">yilmazdogukan173@gmail.com</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:yilmazdogukan173@gmail.com" style="text-decoration: none;">yilmazdogukan173@gmail.com</a></li>
                     <li><i class="fa-solid fa-phone"></i> +90 544 523 61 26</li>
-                    <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Dogukan01" target="_blank" style="color: #e2e8f0; text-decoration: none;">GitHub Profilim</a></li>
-                    <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/dogukan-yilmaz-ceng/" target="_blank" style="color: #e2e8f0; text-decoration: none;">LinkedIn Profilim</a></li>
+                    <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Dogukan01" target="_blank" style="text-decoration: none;">GitHub Profilim</a></li>
+                    <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/dogukan-yilmaz-ceng/" target="_blank" style="text-decoration: none;">LinkedIn Profilim</a></li>
                 </ul>
 
                 <h2 style="margin-top: 2rem;"><i class="fa-solid fa-circle-question"></i> Sık Sorulan Sorular</h2>
@@ -50,7 +52,7 @@
                 </div>
             </div>
 
-            <div style="flex: 1; min-width: 300px; background: rgba(0,0,0,0.2); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05);">
+            <div style="flex: 1; min-width: 300px; background: var(--list-item-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color);">
                 <h2><i class="fa-solid fa-paper-plane"></i> Bana Ulaşın</h2>
                 <form action="#" method="POST">
                     <div class="form-group">
